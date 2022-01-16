@@ -1,0 +1,136 @@
+:root {
+    /* --primary: #a5c882; */
+    --primary: #4a7222;
+    --secondary: #d33f49;
+    --light: #fff;
+    --dark:#000;
+    --disabled:#e7e7e7;
+}
+
+body {
+    margin: 0;
+    height: 150vh;
+    background: var(--disabled);
+}
+
+*::first-letter{
+    text-transform: capitalize;
+}
+
+.roundBorder {
+    border-radius: 5px;
+}
+
+.list {
+    margin: 25px auto;
+    padding: 25px;
+    background: var(--light);
+    width: 100%;
+    max-width: 350px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dateLeft {
+    display: flex;
+    align-items: center;
+}
+
+.dayHour{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock {
+    display: flex;
+    flex-direction: row;
+    padding: auto;
+}
+
+#dateHour, #dateMinute, #dateSecond, span {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#dateNumber {
+    font-size: 50px;
+}
+
+#dateText {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#dateMonth, #dateNumber, #dateText {
+    font-weight: bold;
+}
+
+#dateMonth, #dateYear {
+    font-weight: 7px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+form {
+    margin: 20px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 35px auto;
+    grid-column-gap: 15px;
+}
+
+input {
+    border:none;
+    padding-left: 10px;
+    background: var(--disabled);
+}
+
+input:focus {
+    outline: none;
+}
+
+.addTaskButton, .orderButton {
+    border:none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.addTaskButton {
+    height: 35px;
+    border-radius: 50%;
+    font-size: 18px;
+    background: var(--disabled);
+}
+
+.orderButton {
+    background: var(--secondary);
+    color: var(--light);
+}
+
+.task {
+    background: var(--primary);
+    padding: 15px;
+    margin-top: 15px;
+    color:var(--light);
+    cursor: pointer;
+}
+
+.remove {
+    background: var(--secondary);
+    padding: 15px;
+    margin-top: 15px;
+    color:var(--light);
+    cursor: pointer;
+}
+
+.done {
+    background: var(--disabled);
+    text-decoration: line-through;
+    color:var(--dark)
+}
