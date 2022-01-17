@@ -1,2 +1,2 @@
 # toDoList
-App de lista de tareas
+Aplicación de lista de tareas
